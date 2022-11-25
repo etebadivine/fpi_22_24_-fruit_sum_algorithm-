@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-5 offset-md-4">
+          <div class="card border-0 shadow p-3 mb-5 bg-white rounded my-5">
+            <div class="card-body text-center">
+              <img src="/asset/image (2).png" width="50px" />
+
+              <h4 class="my-4" id="title"></h4>
+              <h6 id="caption"></h6>
+
+              <form class="mt-4">
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    placeholder="Enter Number of Fruit"
+                    id="fruit" />
+                </div>
+                <div class="mb-3">
+                  <input
+                    class="form-control"
+                    placeholder="Number of Days"
+                    id="days" />
+                </div>
+
+                <div class="d-grid gap-2 mb-4">
+                  <button
+                    id="calc"
+                    class="btn btn-dark rounded-pill"
+                    type="button"
+                    onclick="returnQuantity()">
+                    Calculate
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
